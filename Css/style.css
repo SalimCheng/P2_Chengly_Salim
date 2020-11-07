@@ -1,0 +1,172 @@
+@font-face
+{
+    font-family: "raleway"; src: url('../Fonts/Raleway-VariableFont_wght.ttf');
+    font-style: italic; src: url('../Fonts/Raleway-Italic-VariableFont_wght.ttf');
+}
+
+body
+{
+    margin: 0.5;
+    padding: 0;
+    font-family: "raleway";
+}
+/*En-tête*/
+.find
+{
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 0.2em;
+}
+img.logo
+{
+    color: #0065FC;
+    
+}
+.en-tete
+{
+    display: flex;
+    margin: 3%;
+    
+}
+
+.logo
+{
+    flex: 3;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 95px;
+}
+nav.menu
+{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    top: 25px;
+    right: 25px;
+}
+nav.menu ul
+{
+    margin: auto;
+}
+nav.menu li
+{
+    align-content: center;
+}
+ul.nav
+{
+    flex: 1;
+    list-style-type: none;
+    color: #DEEBFF;
+    display: flex;
+    justify-content: space-around;
+}
+
+li.navbar
+{
+    display: flex;
+    margin-left: 3em;
+    text-decoration: none;
+    
+}
+a
+{
+    text-decoration: none;
+}
+a.activites
+{
+    color: black;
+}
+a.register
+{
+    font-weight: bold;
+}
+.search
+{
+    display: flex;
+    width: 25em;
+}
+
+#ville-search
+{
+    height: 3em;
+    width:10;
+}
+
+.img_position
+{
+
+    background-color:#F2F2F2;
+}
+.fas.fa-map-marker-alt
+{
+    padding: 0;
+    margin: 0;
+}
+
+.bouton
+{
+    height: 2.75em;
+    width:7em;
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0 15px 15px 0;
+}
+.searchbut
+{
+    width: 5em;
+    height: 2.5em;
+    color: white;
+    background-color: #0065FC;
+    border: none;
+    margin-top: 0.1em;
+    font-size: medium;
+    font-family: "raleway";
+    font-weight: bold;
+}
+.hebergements
+{
+    background-color: #F2F2F2;
+    width: 400px;
+    border-radius: 15px 15px 15px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    flex-direction: row;
+    text-align: center;
+}
+.hebergements img
+{
+    width: 50%;
+    height: 50%;
+}
+button.plus
+{
+    background-color: #F2F2F2;
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+}
+aside
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    width: 200px;
+    border-radius: 15px 15px 15px 15px;
+    text-align: center;
+    
+}
+.bloc-pop img
+{
+    width: 150px;
+    height: 200px;
+}
+footer
+{
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+}
