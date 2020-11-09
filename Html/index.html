@@ -43,111 +43,167 @@
                 </div>
             </section>
                 <!--Filtre-->
-            <section class="filtres">
-                <div class="filter">Filtres</div>
+            <section id="filtres">
+                <p>Filtres</p>
                     <div class="filters-button">
-                            <div class="Eco">
-                                <span class="icones_filtre">
-                                    <span class="fas fa-money-bill-wave"></span>
-                                </span>
-                                <button class="boutons" type="submit">
-                                    <span class="filter-text">Économique</span>
-                                </button>
+                        <div class="Conteneur-filtre">
+                            <div id="icone-container">
+                           <!-- <span class="icones_filtre">-->
+                                <i class="fas fa-money-bill-wave"></i>
+                           <!-- </span> -->
                             </div>
-                            <div class="Fami">
-                                <span class="icones_filtre">
-                                    <span class="fas fa-child"></span>
-                                </span>
-                                <button class="boutons" type="submit">
-                                    <span class="filter-text">Familial</span>
-                                </button>
-                            </div>
-                        <div class="Romantique">
+                            <button class="boutons" type="submit">
+                                <span class="filter-text">Économique</span>
+                            </button>
+                        </div>
+                        <div class="Conteneur-filtre">
+                            <div id="icone-container">
                             <span class="icones_filtre">
-                                <span class="fas fa-heart"></span>
+                                <i class="fas fa-child"></i>
                             </span>
+                            </div>
+                            <button class="boutons" type="submit">
+                                <span class="filter-text">Familial</span>
+                            </button>
+                        </div>
+                        <div class="Conteneur-filtre">
+                            <div id="icone-container">
+                            <span class="icones_filtre">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                            </div>
                             <button class="boutons" type="submit">
                                 <span class="filter-text">Romantique</span>
                             </button> 
                         </div>   
-                        <div class="Pets">
+                        <div class="Conteneur-filtre">
+                            <div id="icone-container">
                             <span class="icones_filtre">
-                                <span class="fas fa-dog"></span>
+                                <i class="fas fa-dog"></i>
                             </span>
+                            </div>
                             <button class="boutons" type="submit">
-                            <span class="filter-text">Animaux autorisés</span>
+                                <span class="filter-text">Animaux autorisés</span>
                             </button>
                         </div>
                     </div>
+                </div>
             </section>
                 <!--Informations-->
             <div class="info">
-                <p><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+                <span class="info-container">
+                <i class="fas fa-info"></i>
+                </span>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
                 <!--Hebergements-->
-            <section class="hebergements">
-                <h3 id="Heberg">Hébergements à Marseille</h3>
-                <div>
-                    <figure class="bloc-heberg">
+        <section id="hebergements">
+            <div class="heberg-body">
+                <h3>Hébergements à Marseille</h3>
+            <div id="heberg-container">
+                <a class="Heberg-list" href="#">
+                    <figure id="bloc-heberg">
                         <img src="../images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Chambre1" class="auberge">
                     </figure>
                     <figcaption>
                     <h4>Auberge La Cannebière</h4>
-                    <p>Nuit à partir de 25€</p>
+                    <p>Nuit à partir de <strong>25€</strong></p>
+                    <div class="note">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="grey-star"><i class="fas fa-star"></i></span>
+                    </div>
                     </figcaption>
-                </div>
-                <div>
-                    <figure class="bloc-heberg">
+                </a>
+                <a class="Heberg-list" href="#">
+                    <figure id="bloc-heberg">
                         <img src="../images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Chambre2" class="port">
                     </figure>
                     <figcaption>
                     <h4>Hôtel du port</h4>
-                    <p>Nuit à partir de 52€</p>
+                    <p>Nuit à partir de <strong>52€</strong></p>
+                    <div class="note">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
                     </figcaption>
-                </div>
-                <div>
-                    <figure class="bloc-heberg">
+                </a>
+                <a class="Heberg-list" href="#">
+                    <figure id="bloc-heberg">
                     <img src="../images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Chambre3" class="mouettes">
                     </figure>
                     <figcaption>
                     <h4>Hôtel Les mouettes</h4>
-                    <p>Nuit à partir de 76€</p>
+                    <p>Nuit à partir de <strong>76€</strong></p>
+                    <div class="note">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
                     </figcaption>
-                </div>
-                <div>
-                    <figure class="bloc-heberg">
+                </a>
+                <a class="Heberg-list" href="#">
+                    <figure id="bloc-heberg">
                     <img src="../images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Chambre4" class="la-mer">
                     </figure>
                     <figcaption>
                     <h4>Hôtel de la mer</h4>
-                    <p>Nuit à partir de 46€</p>
+                    <p>Nuit à partir de <strong>46€</strong></p>
+                    <div class="note">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
                     </figcaption>
-                </div>
-                <div>
-                    <figure class="bloc-heberg">
+                </a>
+                <a class="Heberg-list" href="#">
+                    <figure id="bloc-heberg">
                     <img src="../images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Chambre5" class="lepanier">
                     </figure>
                     <figcaption>
                     <h4>Auberge Le Panier</h4>
-                    <p>Nuit à partir de 23€</p>
+                    <p>Nuit à partir de <strong>23€</strong></p>
+                    <div class="note">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
                     </figcaption>
-                </div>
-                <div>
-                    <figure class="bloc-heberg">
+                </a>
+                <a class="Heberg-list" href="#">
+                    <figure id="bloc-heberg">
                     <img src="../images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Chambre6" class="amina">
                     </figure>
                     <figcaption>
                     <h4>Hôtel chez Amina</h4>
-                    <p>Nuit à partir de 96€</p>
+                    <p>Nuit à partir de <strong>96€</strong></p>
+                    <div class="note">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
                     </figcaption>
-                </div>
-
+                </a>
+            </div>
                 <div>
                 <button class="plus">
                     <strong>Afficher plus</strong>
                 </button>
                 </div>
-            </section>
+            </div>
                 <!--Populaires-->
             <aside id="populaire">
                 <h3 class="bloc-pop">Les plus populaires</h3>
@@ -179,8 +235,9 @@
                             </figcaption>
                         </div>
             </aside>
+        </section>
                 <!--Activités-->
-            <section class="Activités">
+        <!--    <section class="Activités">
                 <div>
                     <h3 id="Activ">Activités à Marseille</h3>
                 </div>
@@ -201,7 +258,7 @@
                 <div>
                     <img src="../images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Activité6">
                 </div>
-            </section>
+            </section>-->
         </main>
         <!--Pied de page-->
         <footer>
