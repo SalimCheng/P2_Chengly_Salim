@@ -55,15 +55,14 @@ table {
 
 body
 {
-    margin: 0px 5px 0 5px;
     font-family: "raleway";
     overflow-x: hidden;
     flex-wrap: wrap;
 }
 main
 {
-    margin-left: 30px;
-    margin-right: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
                 /*En-tête*/
 
@@ -96,13 +95,11 @@ ul.nav
     display: flex;
     justify-content: space-around;
     padding: 0px 20px 0px 20px;
-    margin: 0px 20px 0px 20px;
 }
 
 li.navbar
 {
-    margin-left: 3em;
-    
+    margin-left: 3em;  
 }
 .navbar a
 {
@@ -112,8 +109,7 @@ li.navbar
 {
     text-decoration: none;
     padding: 50px 0px 0px 0px;
-    border-top: 2px solid #106ffd;
-   
+    border-top: 2px solid #106ffd;   
 }
 a
 {
@@ -125,9 +121,9 @@ a.activites
 }
 a.register
 {
-    margin-left: 20px;
     font-weight: bold;
 }
+ 
                 /* Main */
 
 
@@ -143,7 +139,7 @@ a.register
 {
     font-weight: bold;
     font-size: 1.25em;
-    line-height: 0.5em;
+    line-height: 1em;
     margin-bottom: 13px;
 }
 .find p
@@ -216,7 +212,7 @@ a.register
     display: flex;
     align-items: center;
     font-weight: bold;
-    width: 150vh;
+    width: 929px;
     margin-top: 30px;
 }
 
@@ -224,9 +220,7 @@ a.register
 {
     display: flex;
     justify-content: space-around;
-    margin-left: 5px;
-    
-    
+    margin-left: 5px;   
 }
 
 .filters-button button:hover
@@ -251,7 +245,7 @@ a.register
     background-color: white; 
 }
 
-#icone-container
+.icone-container
 {
     color: #0065FC;
     background-color: #DEEBFF;
@@ -273,8 +267,8 @@ a.register
 {
     margin-left:35px;
 }
-                /* DIV Info */
 
+                /* DIV Info */
 
 .info
 {
@@ -297,9 +291,8 @@ a.register
 }
 .fa-info
 {   
-    position: absolute;
+    padding: 5px;
     align-items: center;
-    left: 47px;
     color: #0065FC;
     font-size: 0.7em;
 
@@ -312,6 +305,7 @@ a.register
 #hebergements
 {
     display: flex;
+    width: 100%;
 }
 #hebergements h3 h4
 {
@@ -320,11 +314,11 @@ a.register
 .heberg-body
 {
     display: flex;
-    flex-wrap: wrap;
-    width: 65%; height: 560px;
+    width: 65%; height: 626px;
     background-color: #F2F2F2;
-    margin: 15px 15px 15px 0;
+    margin: 15px 10px 15px 10px;
     border-radius: 10px;
+    flex-direction: column;
 }
 .heberg-body h3,h4
 {
@@ -332,45 +326,46 @@ a.register
 }
 .heberg-body h3
 {
-    margin: 35px 0px 0px 25px;
+    margin: 30px 0px 0px 25px;
 }
 #heberg-container
 {
     display: flex;
     flex-wrap: wrap;
-    width: 750px; height: 380px;
+    height: 450px; width: 100%;
+    margin-top: 30px;
+    padding: 0px;
     justify-content: space-around;
+    align-content: space-around;
+    flex-direction: column;
 }
 
 
 .heberg-list
 {
-    height: 150px; width: 200px;
+    height: 194px; width: 30%;
     background-color: white;
     border-radius: 20px;
-    border-color: white;
     box-shadow: 0 4px 2px silver;
     color: black;
-    line-height: 1em;
+    line-height: 0;
     padding: 5px;
     margin: 0px;
     display:flex;
     flex-direction: column;
-    /*flex-wrap: wrap;*/
 }
 
 .heberg-list img
 {
-    width: 200px; height: 95px;
+    width: 100%; height: 114px;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
 }
 .heberg-caption
 {
-    flex-direction: column;
-    margin: 3px 0px 3px 10px;
-    font-size: 0.8em;
-    line-height: 1.4em;
+    margin: 8px 0px 3px 17px;
+    font-size: 0.88em;
+    line-height: 1.5em;
 }
 .note
 {
@@ -391,7 +386,7 @@ a.register
     text-decoration: none;
     border: none;
     font-weight: bold;
-    margin-left: 20px;
+    margin: 45px 0px 0px 20px;
 }
 
                     /* POPULAIRES */
@@ -402,10 +397,10 @@ aside
     flex-wrap: wrap;
     flex-direction: column;
     background-color: #F2F2F2;
-    width: 35%; height: 560px;
+    width: calc(35%); height: 626px;
     border-radius: 15px 15px 15px 15px;
     text-align: center;
-    margin: 15px;
+    margin: 15px 10px 15px 10px;
     
 }
 #pop-container
@@ -428,8 +423,7 @@ aside
 {
     background-color: white;
     border-radius: 20px;
-    width: calc(90%);
-    border-color: white;
+    width: 338px;
     box-shadow: 0 4px 2px silver;
     color: black;
     line-height: 1em;
@@ -448,7 +442,7 @@ aside
 {
     /*max-width: 100%;*/
     width: calc(45%);
-    height: 130px;
+    height: 139px;
     object-fit: cover;
     display: flex;
     border-radius: 15px 0 0 15px;
@@ -471,14 +465,13 @@ aside
 
 #activités
 {
-    margin: 20px 0 20px 5px;
+    margin: 20px 50px 20px 50px;
 }
 .main-container-activ
 {
     display: flex;
     max-width: 100%; height: 480px;
     justify-content: space-around;
-    padding-top: 10px;
 }
 
 .card_title
@@ -514,7 +507,7 @@ aside
 .activ_title
 {
     font-weight: bold;
-    margin-left: 25px; margin-bottom: 25px;
+    margin: 50px 0px 25px 15px;
 }
 .elem1 img
 {
@@ -553,11 +546,11 @@ footer
 }
 #foot-container
 {
-    width: 150vh;
+    width: 900px;
     display: flex;
     justify-content: space-between;
 }
-#foot-container h5
+#foot-container h2
 {
     font-weight: bold;
     font-size: 1em;
@@ -567,5 +560,5 @@ footer
 {
     color: black;
     line-height: 25px;
-    font-size: 0.8em;
+    font-size: 1em;
 }
