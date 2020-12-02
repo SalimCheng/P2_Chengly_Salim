@@ -50,9 +50,14 @@ table {
 body
 {
     font-family: "Raleway";
-    overflow-x: hidden;
     flex-wrap: wrap;
 }
+
+main
+{
+    overflow-x: hidden;
+}
+
 .blocpage1
 {
     margin-left: 50px;
@@ -425,7 +430,7 @@ aside
 {
     background-color: white;
     border-radius: 20px;
-    width: 85%;
+    width: calc(100% - 30px);
     box-shadow: 0 4px 2px silver;
     color: black;
     line-height: 1em;
@@ -588,13 +593,17 @@ footer
 }
 @media (min-width: 844px) and (max-width: 1066px)
 {
+    main 
+    {
+        
+    }
     .blocpage1, #hebergements
     {
         margin: 0px 25px 0px 25px;
     }
     #hebergements
     {
-        width: 93vw;
+        width: 95vw;
     }
     .heberg-caption
     {
@@ -610,19 +619,31 @@ footer
     {
         margin: 0px 25px 25px 25px;
     }
+    .main-container-activ
+    {
+        margin: 0px;
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
     .card_img, .card_title
     {
-        width: 25vw;
+        width: 40vw;
+    }
+    .activ:nth-child(3)
+    {
+        order: 2;
     }
     #pop-container
     {
-        display: block;
     }
     .pop-caption
     {
         font-size: 0.7em;
         line-height: 1.5em;
     }
+
 
 }
             /*   --MEDIA TABLET--  */
@@ -762,7 +783,7 @@ footer
         width: 100vw;
         display: flex;
         flex-direction: column-reverse;
-        margin: 0px 0px 25px 0px;
+        margin: 0px 0px 35px 0px;
     }
     .heberg-body
     {
@@ -809,18 +830,18 @@ footer
     .pop-head
     {
         font-size: 1.25em;
-        width: 82vw;
+        width: 90vw;
         margin: 30px 5px 0px 25px;
     }
     #pop-container
     {
         display: flex;
         align-items: center;
-        margin: 20px 5px 0px 5px;
+        margin: 20px 5px 0px 15px;
     }
     .pop-list
     {
-        margin-left: 0px;
+        margin: 10px;
     }
     .pop-caption
     {
@@ -849,9 +870,18 @@ footer
         display: flex;
         justify-content: space-around;
     }
-    .activ:nth-child(3)
+    .activ:nth-child(1)
     {
         order: 1;
+    }
+    img.card_img
+    {
+        margin-top: 35px;
+    }
+    h3.activ_title
+    {
+        margin-bottom: 0px;
+        font-size: 1.25em;
     }
     footer
     {
@@ -1024,12 +1054,12 @@ footer
         flex-direction: column;
         justify-content: space-around;
         height: 1400px; width: 100%;
-        margin: 0px 0px 0px 0px; padding: 0px;
+        margin: 0px; padding: 0px;
     }
     a.heberg-list
     {
         width: 85%; height: 182px;
-        margin: 0px;
+        margin: 0px 10px 0px 0px;
     }
     .plus
     {
@@ -1060,7 +1090,7 @@ footer
     }
     #activités
     {
-        margin: 5px 15px 35px 15px;
+        margin: 5px 25px 35px 15px;
         display: flex;
         flex-direction: column;
     }
