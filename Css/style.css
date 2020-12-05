@@ -154,6 +154,7 @@ a.register
     height: 3em;
     font-weight: bold;
     border: solid 1px #F2F2F2;
+    padding-left: 15px;
 }
 ::placeholder
 {
